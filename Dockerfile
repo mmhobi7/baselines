@@ -18,7 +18,7 @@ WORKDIR $CODE_DIR/baselines
 # Clean up pycache and pyc files
 RUN rm -rf __pycache__ && \
     find . -name "*.pyc" -delete && \
-    pip install -e .[test]
+    pip install -e .[test,tf]
 
 
 CMD /bin/bash

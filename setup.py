@@ -22,10 +22,10 @@ setup(name='baselines',
           'opencv-python'
       ],
       extras_require={
-	  'test': [
-	     'filelock',
-	     'pytest
-           ],
+          'test': [
+	         'filelock',
+	         'pytest'
+          ],
           'tf': ['tensorflow>=1.4.0'],
           'tf_gpu': ['tensorflow-gpu>=1.4.0'],
       },    

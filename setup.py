@@ -10,7 +10,6 @@ setup(name='baselines',
       packages=[package for package in find_packages()
                 if package.startswith('baselines')],
       install_requires=[
-          'gym[mujoco,atari,classic_control,robotics]',
           'scipy',
           'tqdm',
           'joblib',
@@ -26,11 +25,11 @@ setup(name='baselines',
 	         'filelock',
 	         'pytest'
           ],
-          'tf': ['tensorflow>=1.4.0'],
-          'tf_gpu': ['tensorflow-gpu>=1.4.0'],
+          'tf': ['tensorflow==1.4.0'],
+          'tf_gpu': ['tensorflow-gpu==1.4.0'],
       },    
       description='OpenAI baselines: high quality implementations of reinforcement learning algorithms',
       author='OpenAI',
       url='https://github.com/openai/baselines',
       author_email='gym@openai.com',
-      version='0.1.5')
+      version='0.1.6')
